@@ -10,5 +10,5 @@ if ! command -v node >/dev/null 2>&1 || [ "$(node -p 'process.versions.node.spli
 fi
 
 npm ci
-npm run build
+CI=false npm run build
 npx cap copy ios
